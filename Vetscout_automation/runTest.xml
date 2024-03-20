@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Vetscout Web Automation">
+	<!-- thread-count="3" parallel="methods" -->
+	<listeners>
+		<listener class-name="com.vetscout.listeners.TestFilterListener" />
+		<listener class-name="com.vetscout.listeners.ExtentListeners" />
+		<listener class-name="com.vetscout.errorCollectors.TestListenerAdapter" />
+	</listeners>
+	<test verbose="2" preserve-order="true" name="Vetscout Web Automation - Tests" >
+		<classes>
+		<!--<class name="com.vetscout.test.MonkeyTest" />
+			<class name="com.vetscout.test.AddProductsTest" />-->
+			
+		
+			<class name="com.vetscout.test.OrderTest" /> 
+			<class name="com.vetscout.test.ProductsTest" />
+			<class name="com.vetscout.test.PromotionsTest" />
+			 <class name="com.vetscout.test.LoginTest" />
+			<class name="com.vetscout.test.SingupTest" />
+			<class name="com.vetscout.test.HomeTest" /> 
+			<class name="com.vetscout.test.Sort_Products_In_Orders"></class>	
+			<class name="com.vetscout.test.Partners"></class>
+			<class name="com.vetscout.test.AdminLoginTest" />
+			<class name="com.vetscout.test.RebatesPsiRebatesTest"/>
+ 			<class name="com.vetscout.test.Order_Budgets"></class>
+			<class name="com.vetscout.test.AdminLoginTest" />
+			<class name="com.vetscout.test.CartTest" /> 
+			<class name="com.vetscout.test.ContactUsTest" />
+			<class name="com.vetscout.test.ProfileTest" /> 
+		    <class name="com.vetscout.test.Sort_Products_In_Orders"></class>		 
+		    
+		    
+		    
+		</classes>
+	</test>
+</suite> 
+ 	 	

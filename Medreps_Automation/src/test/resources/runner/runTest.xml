@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Medrep App Automation">
+
+	<listeners>
+		<listener class-name="com.medrep.listeners.ExtentListeners" />
+		<listener class-name="com.medrep.errorCollectors.TestListenerAdapter" />
+		 <listener class-name="com.medrep.listeners.TestFilterListener" />
+		<listener class-name="com.medrep.listeners.AnnotationTransform" />
+
+	  <listener class-name="com.medrep.errorCollectors.TestListenerAdapter"/>
+	</listeners>
+	<test verbose="2" preserve-order="true" name="Medrep App Automation - Tests" thread-count="3" parallel="methods">
+
+		<classes>			
+			<class name="com.medrep.test.CandidateAccount" />
+			<class name="com.medrep.test.CandidateCareerAdvice" />
+			<class name="com.medrep.test.CandidateDashboard" />
+			<class name="com.medrep.test.CandidateFooterScreen"/>			
+			<class name="com.medrep.test.CandidateHiringWithMedrep" />			
+			<class name="com.medrep.test.CandidateHomeScreen" />
+			<class name="com.medrep.test.CandidateJobDetail" />
+			<class name="com.medrep.test.CandidateLogin" />
+			<class name="com.medrep.test.CandidateMedicalSalesSalary"/>
+			<class name="com.medrep.test.CandidateSignUp" />
+			<class name="com.medrep.test.CandidateSubmitApplicationPopup" />
+			<class name="com.medrep.test.CandidateJobSearch" />
+			<class name="com.medrep.test.CreateAlert" />
+			<class name="com.medrep.test.EmployerAccount" /> 
+			<class name="com.medrep.test.EmployerCareerAdvice" />	
+			<class name="com.medrep.test.EmployerCompanyProfile" />
+			<class name="com.medrep.test.EmployerDashBoard" />			
+			<class name="com.medrep.test.EmployerHamburger" />
+			<class name="com.medrep.test.EmployerHomeScreen" />
+			<class name="com.medrep.test.EmployerLogin" />
+			<class name="com.medrep.test.EmployerManageJobs" />
+			<class name="com.medrep.test.EmployerNamedUsers" />
+			<class name="com.medrep.test.EmployerPostedJobs" />
+			<class name="com.medrep.test.EmployerResumeSearch" />
+			<class name="com.medrep.test.EmployerSignUp" />
+			<class name="com.medrep.test.ExistingCandidateLoginInactive" />		
+			<class name="com.medrep.test.DeleteJobs" />
+			<class name="com.medrep.test.DeleteCreatedUser" />
+			
+		</classes>
+	</test>
+</suite> 
+ 	 	

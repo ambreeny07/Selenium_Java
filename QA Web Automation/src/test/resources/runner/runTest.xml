@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT"
+	name="Ultimate Qa Web Automation">
+	<listeners>
+		<listener
+			class-name="com.ultimateqa.listeners.TestFilterListener" />
+		<listener class-name="com.ultimateqa.listeners.ExtentListeners" />
+		<listener
+			class-name="com.ultimateqa.listeners.AnnotationTransform" />
+	</listeners>
+	<test verbose="2" preserve-order="true"
+		name="Ultimate Qa Web Automation - Tests" thread-count="1"
+		parallel="methods">
+		<classes>
+			<class name="com.ultimateqa.test.TestLogin" />
+		</classes>
+	</test>
+</suite>
